@@ -1,5 +1,4 @@
 import React from 'react'
-//import DatePicker from 'antd/lib/date-picker'
 import {DatePicker, Button } from 'antd'
 
 // ES6 style

@@ -1,5 +1,6 @@
 var path = require('path');
 var webpack = require('webpack');
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
 	devtool: 'cheap-module-eval-source-map',
@@ -9,7 +10,7 @@ module.exports = {
 		'./src/entry/index'
 	],
 	resolve: {
-		extensions: ["", ".js", ".jsx"]
+		extensions: ["", ".js", ".jsx", ".css"]
 	},
 	output: {
 		path: path.join(__dirname, 'dist'),
@@ -18,13 +19,17 @@ module.exports = {
 	},
 	plugins: [
 		new webpack.HotModuleReplacementPlugin(),
-		new webpack.NoErrorsPlugin()
+		new webpack.NoErrorsPlugin(),
+		new ExtractTextPlugin("css", "style.css")
 	],
 	module: {
 		loaders: [{
 			test: /\.jsx?/,
 			include: path.join(__dirname, 'src'),
 			loader: 'babel'
+		}, {
+			test: /\.css$/,
+			loader: ExtractTextPlugin.extract("style-loader", "css-loader")
 		}]
 	}
 };
