@@ -1,3 +1,4 @@
+A boilerplate for react-web with [ant design(antd)](http://ant.design/docs/react/introduce)
 
 ### How to start
 
