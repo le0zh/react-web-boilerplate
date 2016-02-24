@@ -1,9 +1,9 @@
-import React from 'react'
+import React, {Component ,PropTypes} from 'react'
 import { Menu, Icon } from 'antd';
 const SubMenu = Menu.SubMenu;
 const MenuItemGroup = Menu.ItemGroup;
 
-export default class SiderMenu extends React.Component{
+export default class SiderMenu extends Component{
 	constructor(){
 		super();
 		this.state = {
@@ -23,7 +23,8 @@ export default class SiderMenu extends React.Component{
 		return (
 			<Menu onClick={(e)=>this.handleClick(e)}
 				theme={this.state.theme}
-				style={{ width: 240 }}
+				style={{ width: 180 }}
+				className = {'viewFramework-sidebar'}
 				defaultOpenKeys={['sub1']}
 				selectedKeys={[this.state.current]}
 				mode="inline">
@@ -50,8 +51,19 @@ export default class SiderMenu extends React.Component{
 					<Menu.Item key="10">选项10</Menu.Item>
 					<Menu.Item key="11">选项11</Menu.Item>
 					<Menu.Item key="12">选项12</Menu.Item>
+					<Menu.Item key="13">选项13</Menu.Item>
+					<Menu.Item key="14">选项14</Menu.Item>
+					<Menu.Item key="15">选项15</Menu.Item>
+					<Menu.Item key="16">选项16</Menu.Item>
 				</SubMenu>
 			</Menu>
 		);
 	}
 }
+
+SiderMenu.defaultProps = {
+	styleName: ''
+};
+SiderMenu.propTypes = {
+	styleName: PropTypes.string
+};
