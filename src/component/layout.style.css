@@ -71,6 +71,102 @@
     background: #09c;
 }
 
+.viewFramework-topbar .dropdown .dropdown-menu {
+    z-index: 1;
+    font-size: 12px;
+    border-radius: 0;
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    padding: 0;
+}
+
+.viewFramework-topbar .topbar-info .dropdown .dropdown-menu {
+    width: 100%;
+    min-width: 0px;
+    margin-top: -1px;
+    border: none;
+}
+.viewFramework-topbar .topbar-info .dropdown.open .topbar-btn {
+    color: #333;
+    background: #fff;
+    border-bottom: 1px solid #eaedf1;
+    position: relative;
+}
+
+.viewFramework-topbar .topbar-info .topbar-info-btn a {
+    line-height: 40px;
+    padding-left: 10px;
+}
+
+li.topbar-info-btn {
+    height: 40px;
+    border-bottom: 1px solid #eaedf1;
+}
+
+.viewFramework-topbar .dropdown .anticon-down {
+    vertical-align: middle;
+    transition: transform 0.2s;
+    -o-transition: transform 0.2s;
+    -ms-transition: transform 0.2s;
+    -moz-transition: transform 0.2s;
+    -webkit-transition: transform 0.2s;
+}
+
+.viewFramework-topbar .dropdown.open .anticon-down {
+    vertical-align: text-top;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    font-size: 14px;
+    list-style: none;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    background-clip: padding-box;
+}
+
+.open > .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu > li > a {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: normal;
+    line-height: 1.428571429;
+    color: #333333;
+    white-space: nowrap;
+}
+
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+    color: #262626;
+    text-decoration: none;
+    background-color: #f5f5f5;
+}
+
 /**
  * 左侧菜单容器样式
  */
