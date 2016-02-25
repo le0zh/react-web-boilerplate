@@ -105,7 +105,7 @@ li.topbar-info-btn {
 }
 
 .viewFramework-topbar .dropdown .anticon-down {
-    vertical-align: middle;
+	vertical-align: middle;
     transition: transform 0.2s;
     -o-transition: transform 0.2s;
     -ms-transition: transform 0.2s;
@@ -122,6 +122,9 @@ li.topbar-info-btn {
     -o-transform: rotate(180deg);
 }
 
+/**
+ * 下拉框样式，来自bootstrap
+ */
 .dropdown {
     position: relative;
 }
@@ -168,6 +171,18 @@ li.topbar-info-btn {
 }
 
 /**
+ * 主显示区域样式
+ */
+.viewFramework-body {
+    position: absolute;
+    width: 100%;
+    top: 50px;
+    bottom: 0px;
+    background-color: #000;
+    z-index: 100;
+}
+
+/**
  * 左侧菜单容器样式
  */
 .viewFramework-sidebar{
@@ -180,6 +195,34 @@ li.topbar-info-btn {
     overflow-x: hidden;
 }
 
-.content{
-	background: #aaa;
+/**
+ * 右侧产品区域样式
+ */
+.viewFramework-product {
+    width: auto;
+    position: absolute;
+    top: 0px;
+    left: 180px;
+    bottom: 0px;
+    right: 0px;
+    overflow: hidden;
+    background: #FFF;
+}
+
+.viewFramework-product-body {
+    position: absolute;
+    width: auto;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    overflow: hidden;
+    overflow-y: auto;
+    -o-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+}
+.console-container {
+    padding: 0 15px;
 }
