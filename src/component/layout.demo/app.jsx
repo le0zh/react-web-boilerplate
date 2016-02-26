@@ -1,11 +1,11 @@
 import React from 'react'
 import { Row, Col } from 'antd'
-import SiderMenu from './SiderMenu'
-import Topbar from './Topbar'
-
-import ContentDemo from './Test'
+import { Link } from 'react-router'
 
 import './layout.style.css'
+import SiderMenu from './SiderMenu'
+import Topbar from './Topbar'
+import ContentDemo from './TableData'
 
 export default class App extends React.Component{
 	render(){
@@ -17,7 +17,7 @@ export default class App extends React.Component{
 					<div className={'viewFramework-product'}>
 						<div className={'viewFramework-product-body'}>
 							<div className={'console-container'}>
-								<h2 style={{paddingTop: 15, paddingBottom: 15}}>测试内容</h2>
+								<h1 style={{marginTop: 10, marginBottom: 10}}>测试内容</h1>
 								<ContentDemo />
 							</div>
 						</div>
