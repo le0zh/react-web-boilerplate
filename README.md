@@ -1,4 +1,9 @@
-A boilerplate for react-web with [ant design(antd)](http://ant.design/docs/react/introduce)
+A collection of demo projects for react-web.
+For personal and team reference.
+
+For now, here are the demo projects:
++ layout.demo: a dashboard layout via antd
++ routes.demo: a demo for react-route
 
 ### How to start
 
