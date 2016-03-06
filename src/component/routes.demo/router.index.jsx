@@ -14,13 +14,13 @@ export default class RouterTest extends React.Component{
 			<Router history={browserHistory}>
 				<Route path="/" component={App}>
 				    {/* add it here, as a child of `/` */}
-      				<IndexRoute component={Home}/>
+      			<IndexRoute component={Home}/>
 
 					<Route path="/repos" component={Repos}>
 					 	{/* 嵌套路由 */}
 						<Route path="/repos/:userName/:repoName" component={Repo}/>
 					</Route>
-	    			<Route path="/about" component={About}/>
+	    		<Route path="/about" component={About}/>
 				</Route>
 			</Router>
 		);

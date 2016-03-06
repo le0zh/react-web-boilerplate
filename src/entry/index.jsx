@@ -8,6 +8,9 @@ import ReactDom from 'react-dom'
 //import App from '../component/routes.demo/router.index'
 
 //reduser实例，计数器
-import App from '../component/redux.demo/counter/index'
+//import App from '../component/redux.demo/counter/index'
+
+//日志app
+import App from '../component/wikiteclog/route'
 
 ReactDom.render(<App />, document.getElementById('react-content'));
